@@ -1,0 +1,18 @@
+#ifndef __DATA_H__
+#define __DATA_H__
+
+#include <stdint.h>
+
+
+/* Integer to ASCII, this function needs to convert data from a standard 
+ * integer type into an ASCII string.
+*/
+uint8_t my_itoa (int32_t data, uint8_t* ptr, uint32_t base);
+
+/* ASCII to integer needs to convert data back from an ASCII represented
+ * string into an integer type.
+*/ 
+int32_t my_atoi(uint8_t* ptr, uint8_t digits, uint32_t base);
+
+
+#endif
